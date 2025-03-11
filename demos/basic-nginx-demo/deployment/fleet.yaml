@@ -9,7 +9,7 @@ spec:
   template:
     spec:
       os:
-        image: quay.io/mnara/fedora-bootc-flightctl:v1
+        image: quay.io/mnara/fedora-bootc-flightctl:v2
       config:
         - name: motd-update
           inline:
