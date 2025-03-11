@@ -21,11 +21,6 @@ spec:
             repository: flightctl-demo
             targetRevision: main
             path: /demos/basic-nginx-demo/configuration
-        - name: ricky-super-secrets
-          gitRef:  
-            repository: flightctl-demo
-            targetRevision: main
-            path: /configuration
       systemd:
         matchPatterns:
           - "microshift.service"
