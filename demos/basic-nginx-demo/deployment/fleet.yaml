@@ -9,7 +9,7 @@ spec:
   template:
     spec:
       os:
-        image: quay.io/flightctl/flightctl-agent-basic-nginx:latest
+        image: quay.io/mnara/fedora-bootc-flightctl:v1
       config:
         - name: motd-update
           inline:
