@@ -18,12 +18,12 @@ spec:
               mode: 0644
         - name: microshift-manifests
           gitRef:  
-            repository: basic-nginx-demo
+            repository: flightctl-demo
             targetRevision: main
             path: /demos/basic-nginx-demo/configuration
         - name: ricky-super-secrets
           gitRef:  
-            repository: ricky-super-secrets
+            repository: flightctl-demo
             targetRevision: main
             path: /configuration
       systemd:
