@@ -9,7 +9,7 @@ spec:
   template:
     spec:
       os:
-        image: quay.io/mnara/fedora-bootc-flightctl:v2
+        image: quay.io/mnara/centos-bootc-flightctl:v2
       config:
         - name: motd-update
           inline:
@@ -23,6 +23,5 @@ spec:
             path: /demos/basic-nginx-demo/configuration
       systemd:
         matchPatterns:
-          - "microshift.service"
           - "crio.service"
           - "flightctl-agent.service"
