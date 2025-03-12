@@ -1,0 +1,13 @@
+[Unit]
+Description=nginx Container
+
+[Container]
+ContainerName=nginx-demo
+Image=docker.io/library/nginx:alpine
+PublishPort=8080:80
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=multi-user.target default.target
