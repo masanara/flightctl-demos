@@ -9,7 +9,7 @@ spec:
   template:
     spec:
       os:
-        image: quay.io/mnara/centos-bootc-flightctl:v5
+        image: quay.io/mnara/centos-bootc-flightctl:v4
       config:
         - name: motd-update
           inline:
