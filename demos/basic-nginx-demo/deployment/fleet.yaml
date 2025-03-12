@@ -23,5 +23,4 @@ spec:
             path: /demos/basic-nginx-demo/configuration
       systemd:
         matchPatterns:
-          - "crio.service"
           - "flightctl-agent.service"
