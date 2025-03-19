@@ -27,7 +27,7 @@ spec:
     directory:
       recurse: true
     path: app
-    repoURL: https://github.com/siamaksade/openshift-gitops-getting-started
+    repoURL: https://github.com/masanara/microshift-gitops-demo
   syncPolicy:
     automated: {}
     syncOptions:
