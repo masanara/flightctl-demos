@@ -1,0 +1,42 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-helm-app
+  namespace: openshift-gitops
+  labels:
+    env: production
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  syncPolicy:
+    automated:
+      prune: true 
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: my-helm-app
+  source:
+    repoURL: https://masanara.github.io/charts/
+    chart: spring-petclinic
+    targetRevision: 0.1.0
+    helm:
+      releaseName: spling-petclinic
+      values: |
+        replicaCount: 3
+        service:
+          type: ClusterIP
+          port: 8080
+        resources:
+          limits:
+            cpu: 100m
+            memory: 128Mi
+          requests:
+            cpu: 50m
+            memory: 64Mi
+        route:
+          enabled: true
+          tls:
+            enabled: false
+  project: default
