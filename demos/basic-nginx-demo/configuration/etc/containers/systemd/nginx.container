@@ -3,7 +3,7 @@ Description=nginx Container
 
 [Container]
 ContainerName=nginx-demo
-Image=docker.io/library/nginx:alpine
+Image=harbor.nsx.techlab.netone.co.jp/library/nginx:alpine
 PublishPort=8080:80
 
 [Service]
