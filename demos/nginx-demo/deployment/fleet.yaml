@@ -9,7 +9,7 @@ spec:
   template:
     spec:
       os:
-        image: harbor.nsx.techlab.netone.co.jp/bootc/microshift-4.17-bootc:v1.2
+        image: harbor.nsx.techlab.netone.co.jp/bootc/microshift-4.17-bootc:1.0
       config:
         - name: motd-update
           inline:
