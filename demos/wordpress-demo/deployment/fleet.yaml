@@ -15,7 +15,7 @@ spec:
           image: harbor.nsx.techlab.netone.co.jp/bootc/wordpress:1.2
           envVars: {}
         - name: nginx
-          image: harbor.nsx.techlab.netone.co.jp/bootc/nginx:1.0
+          image: harbor.nsx.techlab.netone.co.jp/bootc/nginx:2.0
           envVars: {}
       config:
         - name: motd-update
