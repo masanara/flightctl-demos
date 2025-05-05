@@ -26,7 +26,7 @@ spec:
         - name: kubeconfig
           inline:
             - content: export KUBECONFIG=/var/lib/microshift/resources/kubeadmin/kubeconfig
-              path: /root/.bashrc
+              path: /root/.bash_profile
               mode: 0644
         - name: authorized-keys
           inline:
