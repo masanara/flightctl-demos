@@ -1,21 +1,21 @@
 apiVersion: v1alpha1
 kind: Fleet
 metadata:
-  name: wordpress-demo
+  name: nos-demo
 spec:
   selector:
     matchLabels:
-      fleet: wordpress
+      site: nos
   template:
     spec:
       os:
         image: harbor.nsx.techlab.netone.co.jp/bootc/microshift-4.17-bootc:1.0
       applications:
         - name: wordpress
-          image: harbor.nsx.techlab.netone.co.jp/bootc/wordpress:1.0
+          image: harbor.nsx.techlab.netone.co.jp/bootc/wordpress:1.2
           envVars: {}
         - name: nginx
-          image: harbor.nsx.techlab.netone.co.jp/bootc/nginx:1.0
+          image: harbor.nsx.techlab.netone.co.jp/bootc/nginx:2.0
           envVars: {}
       config:
         - name: motd-update
