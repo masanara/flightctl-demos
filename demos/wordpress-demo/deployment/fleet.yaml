@@ -9,13 +9,13 @@ spec:
   template:
     spec:
       os:
-        image: harbor.nsx.techlab.netone.co.jp/bootc/microshift-4.17-bootc:1.1
+        image: harbor.nsx.techlab.netone.co.jp/bootc/microshift-4.17-bootc:1.0
       applications:
         - name: wordpress
-          image: harbor.nsx.techlab.netone.co.jp/bootc/wordpress:1.2
+          image: harbor.nsx.techlab.netone.co.jp/bootc/wordpress:1.0
           envVars: {}
         - name: nginx
-          image: harbor.nsx.techlab.netone.co.jp/bootc/nginx:2.0
+          image: harbor.nsx.techlab.netone.co.jp/bootc/nginx:1.0
           envVars: {}
       config:
         - name: motd-update
