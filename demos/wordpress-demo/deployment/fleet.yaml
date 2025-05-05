@@ -9,7 +9,7 @@ spec:
   template:
     spec:
       os:
-        image: harbor.nsx.techlab.netone.co.jp/bootc/microshift-4.17-bootc:2.1
+        image: harbor.nsx.techlab.netone.co.jp/bootc/microshift-4.17-bootc:1.1
       applications:
         - name: wordpress
           image: harbor.nsx.techlab.netone.co.jp/bootc/wordpress:1.2
